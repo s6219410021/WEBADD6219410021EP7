@@ -5,32 +5,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="BMI">
+    <meta name="description" content="BMI Calculor">
+    <meta name="author" content="Supawat">
+    <title>BMI Calculor</title>
+    <link rel="stylesheet" href="./CSS/1.css">
+    <style>
+        h2{
+            color: rgb(238, 10, 116);
+            text-align: center;
+            background-color: violet;
+            
+        }
+        p{
+            color: rgb(48, 212, 48);
+        }
+        #sau1{
+            color: rgb(32, 110, 226);
+        }
+        #sau2{
+            color:rgb(20, 146, 219);
+        }
+        button{
+            size: 25px;
+            color: rgb(6, 12, 6);
+            background-color: rgb(48, 212, 48);
+        }
+        span{
+            color: rgb(255, 99, 71);
+        }
+        label,input{
+            color: rgb(218, 74, 49);
+        }
+        input{
+            color: rgb(6, 12, 6);
+        }
+    </style>
 </head>
 
 <body>
-    <h1>BMI Calculator</h1>
-    <hr>
-    น้ำหนักตัว(Kg.)
-    <br>
-    <input type="number" name="" id="weight">
-    <br><br>
-    ส่วนสูง(Cm.)
-    <br><br>
-    <input type="number" name="" id="height">
-    <br><br>
-    <button id="calBMI">คำนวน</button>
-    <br><br>
-    BMI
-    <br>
-    <span id="bmiValue">0</span>
-    <br><br>
-    <span id="bmiResult">การแปลผล BMI</span>
+    <div class="bodypage">
+        <div class="text">
+            <h2><b>เครื่องคำนวณหาค่าดัชนีมวลกาย (BMI)</b></h2>
+            <br>
+            <p>  การหาค่าดัชนีมวลกาย (Body Mass Index : BMI) คือเป็นมาตรการที่ใช้ประเมินภาวะอ้วนและผอมในผู้ใหญ่
+                ตั้งแต่อายุ 20 ปีขึ้นไป <br>สามารถทำได้โดยการชั่งน้ำหนักตัวเป็นกิโลกรัม และวัดส่วนสูงเป็นเซนติเมตร
+                แล้วนำมาหาดัชมีมวลกาย โดยใช้โปรแกรมวัดค่าความอ้วนข้างต้น</p>
+        </div>
+        <div class="table" >
+            <div class="space" >
+                <label for="weight" class="f-weight">น้ำหนักตัว (kg.)</label>
+                <br><br>
+                <input type="number" name="" id="weight" class="i-weight" >
+
+                <br>
+                <br><br>
+                <label for="weight" class="f-height"  >ส่วนสูง (Cm.)</label>
+                <br><br>
+                <input type="number" name="" id="height" class="i-height" > 
+                <br><br>
+                <button id="calBMI" class="cal" >คำนวณ ↓</button>
+                <br><br>                
+                <div class="resultBMI">
+                    <div class="result">
+                        <p>BMI</p>
+                        <span id="bmiValue">0</span>
+                        <br><br>
+                        <span id="bmiResult">การแปลผล BMI</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+        <script src="./js/script12.js"></script>
+
+        <br>
+        <p id="sau1">เมื่อทราบผลค่าดัชนีมวลกายแล้ว ต้องปฏิบัติตัวเองเพื่อให้ห่างไกลโรค</p>
+        <p id="sau2"> 1. เลือกการบริโภคอาหารและเครื่องดื่ม โดยเลือกอาหารที่มีคุณค่าทางโภชนาการ โดยเฉพาะ
+        ธัญพืช ผัก และผลไม้ <br>ไม่ควรรับประทานอาหารมื้อหลักเกินวันละ 3 มื้อ และเลือกรับประทานอาหารที่มีแคลอรี่ต่ำ 
+        <br>หลีกเลี่ยงหรือลดการรับประทานอาหารมื้อหนักที่ต้องรับประทานมาก ๆ เช่น อาหารบุฟเฟ่ต์</p>
+        <p id="sau2"> 2. การออกกำลังกาย ควรออกกำลังกายด้วยกิจกรรมที่เหมาะสมกับสภาพร่างกายอย่างน้อย 150 – 300 นาที / <br>
+        สัปดาห์ ด้วยการเดิน วิ่ง เต้นแอโรบิก ปั่นจักรยาน ว่ายน้ำ การออกกำลังกายเฉพาะส่วน <br>อย่างการใช้เครื่องออกกำลังกาย 
+        การยกน้ำหนักหรือออกกำลังกายแบบผสมผสานกันหลายประเภท</p>
 
 
-
-
-    <script src="./js/script12.js"></script>
 </body>
-
 </html>

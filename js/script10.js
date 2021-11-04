@@ -1,18 +1,33 @@
-function func1(){
-    console.log('aaa')
+console.log('Hi ji 9...')
+
+function showName(name){
+    console.log('สวัสดี ' name);
 }
 
-function func2(n1, n2, f1){
-    console.log(n1+n2)
-    f1()
+showName('แมว')
+showName('มด')
+
+function calSum(a,b){
+    console.log('a+b ได้ค่าเป็น')
+    return a + b;
 }
 
-func1()
+console.log( calSum(10,20))
+//alert(calSum(100,99))
 
-func2(10,20,func1)
-
-let x = () => {
-    console.log('Hello')
+let test1() => {
+    console.log('Hello..')
 }
 
-func2(100, 200,x)
+//let test1 = function (){
+ //   console.log('Hello..')
+//}
+
+let test2 = function (number){
+    console.log('Hi...' + number)
+}
+
+
+test1()
+test1()
+test2(200)
